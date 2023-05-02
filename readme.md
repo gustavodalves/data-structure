@@ -2,6 +2,10 @@
 
 This project was implemented in TypeScript. The implementation was based on C and C++, without using standard features of the TypeScript language
 
+## Tools
+  * TypeScript
+  * Jest
+
 ## Installation
 In the project directory, you can run:
 
