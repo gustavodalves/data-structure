@@ -11,7 +11,7 @@ export class DoublyLinkedList<T> {
     head: DoublyLinkedListNode<T> | null = null;
     tail: DoublyLinkedListNode<T> | null = null;
 
-    insert(data: T) {
+    insert(data: T): void {
         const node = new DoublyLinkedListNode(
             data,
             this.head,
@@ -30,7 +30,7 @@ export class DoublyLinkedList<T> {
         this.count++;
     }
 
-    append(data: T) {
+    append(data: T): void {
         const node = new DoublyLinkedListNode(
             data,
             null,
@@ -50,7 +50,7 @@ export class DoublyLinkedList<T> {
         this.count++;
     }
 
-    insertAfter(data: T, nodeData: T) {
+    insertAfter(data: T, nodeData: T): void {
         const nodeToInsert = this.getNode(nodeData);
 
         if(!nodeToInsert) {
@@ -73,7 +73,7 @@ export class DoublyLinkedList<T> {
         this.count++;
     }
 
-    insertBefore(data: T, nodeData: T) {
+    insertBefore(data: T, nodeData: T): void {
         const nodeToInsert = this.getNode(nodeData);
 
         if(!nodeToInsert) {
@@ -100,7 +100,7 @@ export class DoublyLinkedList<T> {
         this.count++;
     }
 
-    removeHead() {
+    removeHead(): DoublyLinkedListNode<T> {
         const remove = this.head;
 
         if(!remove) {
@@ -127,7 +127,7 @@ export class DoublyLinkedList<T> {
         return remove;
     }
 
-    getNode(value: T) {
+    getNode(value: T): DoublyLinkedListNode<T> | null {
         let node: DoublyLinkedListNode<T> | null = this.head;
 
         while(node !== null) {
@@ -141,7 +141,7 @@ export class DoublyLinkedList<T> {
         return null;
     }
 
-    print() {
+    print(): void {
         let temp = this.head;
 
         while(temp !== null) {
@@ -150,7 +150,7 @@ export class DoublyLinkedList<T> {
         }
     }
 
-    printReverse() {
+    printReverse(): void {
         let temp = this.tail;
 
         while(temp !== null) {
