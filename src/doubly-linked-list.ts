@@ -11,7 +11,7 @@ export class DoublyLinkedList<T> {
     head: DoublyLinkedListNode<T> | null = null;
     tail: DoublyLinkedListNode<T> | null = null;
 
-    insert(data: T): void {
+    insert(data: T): DoublyLinkedListNode<T>{
         const node = new DoublyLinkedListNode(
             data,
             this.head,
@@ -28,9 +28,11 @@ export class DoublyLinkedList<T> {
 
         this.head = node;
         this.count++;
+
+        return node;
     }
 
-    append(data: T): void {
+    append(data: T): DoublyLinkedListNode<T> {
         const node = new DoublyLinkedListNode(
             data,
             null,
@@ -48,6 +50,8 @@ export class DoublyLinkedList<T> {
         }
 
         this.count++;
+
+        return node;
     }
 
     insertAfter(data: T, nodeData: T): void {
