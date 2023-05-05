@@ -2,6 +2,14 @@
 
 This project was implemented in TypeScript. The implementation was based on C and C++, without using standard features of the TypeScript language
 
+## Implementations
+* Stack
+* Queue
+* Linked List
+* Doubly Linked List
+* Linked List Circular
+* Doubly Linked List Circular
+
 ## Tools
   * TypeScript
   * Jest
