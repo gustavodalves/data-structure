@@ -7,6 +7,7 @@ This project was implemented in TypeScript. The implementation was based on C an
 * Queue
 * Deque
 * Binary Tree
+* B Tree
 * Linked List
 * Doubly Linked List
 * Linked List Circular
