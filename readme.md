@@ -12,6 +12,7 @@ This project was implemented in TypeScript. The implementation was based on C an
 * Doubly Linked List
 * Linked List Circular
 * Doubly Linked List Circular
+* Hash Table
 
 ## Tools
   * TypeScript
